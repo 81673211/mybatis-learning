@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.0.135:3306/mybatis-learning?useunicode=true&characterEncoding=utf8
+    username: root
+    password: admin
+
+mybatis:
+  type-aliases-package: com.fred.mybatis.domain
+  mapper-locations: classpath:mapper/*Mapper.xml
+logging:
+  level:
+    root: info
