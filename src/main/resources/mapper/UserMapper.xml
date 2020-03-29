@@ -18,7 +18,7 @@
     </select>
 
     <select id="like" resultMap="resultMap">
-        <bind name="bind_user_name" value="'%'" + #{0}+'%'"/>
+        <bind name="bind_user_name" value="'%'+key+'%'"/>
         select id, user_name from users where user_name like #{bind_user_name}
     </select>
 
